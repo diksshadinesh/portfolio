@@ -1,0 +1,893 @@
+body, h1, h2, h3, h4, h5
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+h1{
+    font-size: 2.25em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+h6{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    display: inline;
+}
+
+a:hover{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
+}
+
+.primary{
+    color: #0083ca;
+}
+
+.secondary{
+    color: #0083ca;
+}
+
+.rule{
+    width: 10%;
+    margin: 3% 0% 3% 0%;
+    border-top:3px solid;   color:#003C77;;
+}
+
+.button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300; 
+    background-color: #0083ca;
+}
+
+.button:hover{
+    background-color: #0083ca;
+}
+
+.button:visited{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300; 
+    background-color: #003C77; 
+}
+
+header{
+    position:fixed;
+    display:block;
+    width: 100%;
+    z-index:9;
+    font-size: 1.1em;
+    padding: 1%;
+}
+
+.logo img{
+    width:80%;
+}
+
+nav{
+    font-size: 0.9em;
+    float: right;
+}
+
+nav li{
+    width: 100%;
+    display: inline;
+    color: #ffffff;
+}
+
+nav li a{
+    color: #ffffff;
+}
+
+#icon{
+    float: right;
+    text-align: right;
+    padding:3%;
+}
+
+.drop{
+    text-decoration: none;
+    text-align: center;
+    border: 0px;  
+    display: inline;
+    color: #ffffff;
+    font-size: 1.3em;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.drop li{
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    float: right;
+    text-align: center;
+}
+
+.drop a{
+    color: #ffffff;
+}
+
+#fp-nav ul li a span {
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.fp-slidesNav ul li a span {
+    background: #ffffff;
+}
+
+.fp-controlArrow.fp-prev {
+    margin-left: 2%;
+    cursor: pointer;
+    background: url(back.jpg)
+}
+
+.fp-controlArrow.fp-next {
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.fp-slidesNav{
+   margin-bottom: 10%; 
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #0083ca; /* Black fallback color */
+    background-color: rgbargb(0,131,202,0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-top: 0; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding-left: 10%;
+    text-decoration: none;
+    font-size: 2.25em;
+    color: #ffffff;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay-content a p{
+    padding-left: 2%;
+    font-size: 0.7em;
+    display: inline;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    font-weight: bold;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#section0{
+    color: #ffffff;
+    background-image: url(images/ushr/UshrHero.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.slide1{
+    background-image: url(images/home/spx.png);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.slide2{
+background-image: url(images/home/spx0.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.slide3{
+   background-image: url(images/home/spx1.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center; 
+}
+
+.slide4{
+   background-image: url(images/home/spx2.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center; 
+}
+
+
+#section1{
+    background-image:url(images/home/spx.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    color:#ffffff;
+}
+
+#section2{
+    color: #ffffff;
+    background-image: url(images/home/cw-hero3.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#section3{
+    color: #ffffff;
+    background-image: url(images/emoji/emoji_hero.jpg);
+    background-color: #f2e360;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#section4{
+    color: #ffffff;
+    background-image: url(images/home/nh2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#section5{
+    color: #000000;
+    /*
+        background-image: url(images/home/about2.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:right top;
+    */
+
+}
+
+#section5 a{
+    color: #0083ca;
+}
+
+#section5 a:visited{
+    color: #003C77;
+}
+
+#section5 i{
+    padding-right: 3%;
+}
+
+.icons i{
+    padding-left: 3%;
+}
+
+#section5 h6{
+    text-align: left;
+}
+
+#section5 h1, h2{
+    display: inline;
+}
+
+.caption{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 0.7em;
+    color: gray;
+    font-weight: 300;
+}
+
+.me{
+    width: 40%;
+}
+
+.covertext{
+    margin-top: 30%;
+    text-align: center;
+}
+
+.insidecover{
+    margin-top: 30%;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.centerrow{
+    text-align: center;
+}
+
+.content{
+    padding: 2% 8.3% 2% 8.3%;
+}
+
+.list{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: -0.4%;
+}
+
+.bar p{
+    display: inline;
+}
+
+.bar a{
+    color: #000000;
+}
+
+.bar a:hover{
+    color: #000000; 
+}
+
+.about{
+    padding-right: 2%;
+}
+
+.half{
+    width: 47%;
+    text-decoration: none;
+}
+
+.half img{
+    margin-bottom: 3%;
+}
+
+.featurelist{
+    text-align: center;
+}
+
+.featurelist li{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin:3% 8%;
+}
+
+.featurelist img{
+    width: 80%;
+}
+
+.big{
+    width: 20%;
+}
+
+.symbol{
+height: 0%;
+}
+
+.shadow{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.15);
+box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.15);
+    padding: 4%;
+}
+
+footer{
+    padding: 1%;
+    color: #000000;
+}
+
+footer a{
+    color: #000000;
+}
+
+footer a:hover{
+    color: #000000;
+}
+
+footer i{
+    padding-right: 4%;
+}
+
+footer .list li{
+    float: right;
+    display: inline;
+    padding-right: 4%;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 8;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top img {
+    width: 60%;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+.concept img{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.visuals img{
+    margin-bottom: 3%;
+}
+
+.top-bar{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.blognav{
+    margin-top: 1%;
+    font-size: 1.1em;
+}
+
+.blognav li{
+    display: inline;
+    float: right;
+    padding-right: 4%;
+    color: #000000;
+}
+
+.blognav li a{
+    color: #000000;
+}
+
+.blogname{
+    color: #000000;
+}
+
+.title{
+    padding: 2%;
+}
+
+.title h1{
+    font-family: 'Work Sans', sans-serif;
+    display: inline;
+}
+
+.title h2{
+    font-size: 2.25em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    display: inline;
+    padding-left: 2%;
+}
+
+#content{
+    padding-top: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#content img{
+    padding-bottom: 2%;
+}
+
+.blog-post h1{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.blog-title a{
+    color: #0083ca;
+}
+
+.slide{
+    width: 60%;
+    margin: auto;
+}
+
+
+.show{
+    padding-left: 45%;
+}
+
+.show li{
+    display: inline;
+    padding-right: 3%;
+}
+
+.quote{
+    width: 60%;
+    border-left: 4px solid #1877c7;
+    padding-left: 2%;
+}
+
+.highlight{
+    background-color: aqua;
+}
+
+/*-------MEDIA QUARIES---------*/
+@media screen and (max-width:1440px){
+    .covertext{
+        margin-top: 40%;
+    }
+    
+    .insidecover{
+        margin-top: 40%;
+    }
+    
+        .fp-slidesNav{
+   margin-bottom: 18%; 
+    }
+
+    nav{
+        font-size: 1.2em;
+    }
+    
+    .insideheader{
+        margin-top: -4%;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .covertext{
+        margin-top: 35%;
+    }
+       
+    .insideheader
+    {
+        margin-top: -3%;
+    }
+    
+    .homeheader{
+        margin-top: 0%;
+    }
+    
+    .insidecover{
+        margin-top: 35%;
+    }
+    
+    .fp-slidesNav{
+   margin-bottom: 10%; 
+    }
+    
+    .homelogo{
+        width: 7%;
+    }
+    
+    nav{
+        font-size: 1em;
+    }
+}
+
+/*desktop*/
+@media screen and (max-width:1024px){
+    .covertext{
+        margin-top: 47%;
+    }
+    
+    .homeheader{
+        margin-top: 0%;
+    }
+    
+    .insideheader{
+        margin-top: -5%;
+    }
+    
+    .logo img{
+        width: 100%;
+    }
+    
+    #giffy{
+        width: 80%;
+        text-align: right;
+    } 
+    
+    .fp-slidesNav{
+        margin-bottom: 15%; 
+    }
+    
+    .insidecover{
+        margin-top: 80%;
+        margin-bottom: 0%;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width:769px){
+    h1{
+        font-size: 1.75em;  
+    }
+    
+    .homelogo{
+        width: 10%;
+    }
+    
+    #section0{
+    background-image: url(images/ushr/UshrHero.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    color: #ffffff;
+    }
+    
+    p{
+        font-size: 0.9em;
+    }
+    
+    .logo img{
+        margin-top: 8%;
+        width: 100%;
+    }
+    
+    .nav{
+        font-size: 0.8em;
+    }
+    
+    .homeheader{
+        margin-top: 0%;
+    }
+    
+    .covertext{
+        margin-top: 50%;
+    } 
+    
+    .insideheader{
+        margin-top: -4%;
+    }
+    
+    .insidecover{
+        margin-top: 70%;
+    }
+}
+
+/*large phone*/
+@media screen and (max-width:426px){
+    h1{
+        font-size: 1.9em;
+    }
+    
+    p{
+        font-size: 1.25em;
+    }
+    
+    #section0{
+    background-image: url(images/ushr/ushr_hero_m.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    color: #ffffff;
+    }
+    
+    #section1{
+        background-image: url(images/home/spxmobile2.jpg);
+    }
+    
+    #section2{
+        background-image: url(images/home/cwmobile2.jpg);
+    }
+    
+    #section3{
+        background-image: url(images/emoji/emoji_hero_m.jpg);
+    }
+    
+    #section4{
+        background-image: url(images/home/nhmobile2.jpg);
+    }
+    
+    #section5{
+        margin-left: -5%;
+        background-image: none;
+    }
+    
+    #section5 p{
+        font-size: 1.2em;
+    }
+    
+    .covertext{
+        margin-top: 85%;
+    }
+    
+    .covertext h1{
+        font-size: 1.9em;
+    }
+    
+    .homelogo{
+        width: 20%;
+    }
+    
+    .homeheader{
+        margin-top: 2%;
+    }  
+    
+    .insideheader{
+        margin-top: -10%;
+    }
+    
+    .about{
+        padding-bottom: 5%;
+    }
+    
+    .half{
+        width: 100%;
+    }
+    
+    .copy{
+        text-align: center;
+        margin-bottom: 1%;
+    }
+    
+    .logo{
+        width: 20%;
+    }
+    
+    .big{
+        width: 80%;
+        margin: 0%;
+    }
+    
+        .fp-slidesNav ul li a span {
+    display: none;
+    }
+    
+    .one{
+        margin-top: 10%;
+    }
+    
+        footer .list li{
+        float: left;
+    }
+}
+
+@media screen and (max-width:376px)
+{
+    .insidecover h1{
+        font-size: 2em;
+    }
+    
+    .homeheader{
+        margin-top: 1%;
+    }
+    
+    .insideheader{
+        margin-top: -15%;
+    }
+    
+    #section0{
+        background-image: url(images/ushr/ushr_hero_m.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: center;
+        color: #ffffff;
+    }
+    
+    .about{
+        padding-bottom: 5%;
+    }
+    
+    .half{
+        width: 100%;
+    }
+    
+    .big{
+        width: 80%;
+        margin: 0%;
+    }
+    
+    .test{
+        margin: auto;
+    }
+    
+    .quote{
+        width: 90%;
+    }
+    
+    .invision{
+        width: 10%;
+    }
+    
+    p{
+        font-size: 1.25em;
+    }
+    
+    .bar p{
+        font-size: 1.25em;
+    }
+    
+    .homelogo{
+        width: 20%;
+    }
+    
+    .fp-slidesNav ul li a span {
+        display: none;
+}
+    .covertext{
+        margin-top: 93%;
+    }
+    
+    .one{
+        margin-top: 25%;
+        font-size: 1em;
+    }
+    
+    footer .list li{
+        float: left;
+    }
+
+}
